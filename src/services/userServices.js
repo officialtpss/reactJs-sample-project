@@ -1,5 +1,6 @@
 import StorageService from './../storage/StorageService';
 import apiUrl from './../constants';
+
 export const userService = {
     login,
     logout
