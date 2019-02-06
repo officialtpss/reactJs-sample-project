@@ -1,6 +1,6 @@
 ### `npm install`
 
-Dependencies Library<br>
+To install dependencies library<br>
 
 
 ### `npm start`
