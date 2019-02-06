@@ -1,16 +1,17 @@
 import StorageService from './../storage/StorageService';
+import apiUrl from './../constants';
 export const userService = {
     login,
     logout
 };
-const basePath = 'http://localhost:2000/';
+
 function login(data) {
     const requestOptions = {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
     };
-    return fetch(`${basePath}users`, requestOptions)
+    return fetch(`${apiUrl}users`, requestOptions)
         .then(handleResponse)
         .then(user => {
             StorageService.setLogin(user);
