@@ -1,10 +1,7 @@
 import StorageService from './../storage/StorageService';
 import apiUrl from './../constants';
 
-export const userService = {
-    login,
-    logout
-};
+export const userService = { login, logout };
 
 function login(data) {
     const requestOptions = {
